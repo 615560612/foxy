@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="E:/java/jar/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar" />
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/ext" userId="root"
+			password="1234" />
+		<javaModelGenerator targetPackage="com.xm.foxy.model"
+			targetProject="foxy" />
+		<sqlMapGenerator targetPackage="com.xm.foxy.model.mapping"
+			targetProject="foxy" />
+		<javaClientGenerator targetPackage="com.xm.foxy.dao"
+			targetProject="foxy" type="XMLMAPPER" />
+		<table schema="" tableName="t_log" domainObjectName="Log"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<property name="useActualColumnNames" value="true" />
+		</table>
+	</context>
+</generatorConfiguration>
