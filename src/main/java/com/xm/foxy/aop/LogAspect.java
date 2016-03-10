@@ -59,7 +59,7 @@ public class LogAspect {
 		if (joinPoint.getArgs() == null) {// 没有参数
 			return;
 		}
-		// 获取方法名
+		// 获取方法名dsfsdf
 		String methodName = joinPoint.getSignature().getName();
 		// 获取操作内容
 		String opContent = adminOptionContent(joinPoint.getArgs(), methodName);
