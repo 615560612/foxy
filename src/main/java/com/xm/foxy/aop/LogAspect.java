@@ -63,7 +63,7 @@ public class LogAspect {
 		String methodName = joinPoint.getSignature().getName();
 		// 获取操作内容
 		String opContent = adminOptionContent(joinPoint.getArgs(), methodName);
-		// 创建日志对象
+		// 创建日志对象sadasd
 		Log log = new Log();
 		log.setUserId(logService.loginUserId());// 设置管理员id
 		log.setCreatedate(new Date());// 操作时间
